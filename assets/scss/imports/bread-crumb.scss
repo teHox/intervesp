@@ -1,0 +1,14 @@
+.bread-crumb {
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid $primary-color-light;
+  border-right: 0;
+  border-left: 0;
+  margin-bottom: 50px;
+  font-family: $font-family-mont-semiBold;
+  font-size: $small-fz;
+  color: $primary-color;
+  a {
+    color: $primary-color-black;
+  }
+}

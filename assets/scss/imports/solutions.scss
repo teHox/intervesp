@@ -1,0 +1,33 @@
+.solutions{
+    @include flex(space-between, $align-items: unset);
+    &__img{
+        max-width: 650px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info{
+        max-width: 650px;
+        width: 100%;
+    }
+    .title{
+        color: $primary-color-black;
+        margin-bottom: 30px;
+    }
+    &__block{
+        padding-left: 15px;
+        margin-bottom: 25px;
+        border-left: 3px solid $primary-color;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .text-standart{
+        font-family: $font-family-mont-semiBold;
+        color: $primary-color-black;
+    }
+    .text-small{
+        color: $primary-color;
+    }
+}

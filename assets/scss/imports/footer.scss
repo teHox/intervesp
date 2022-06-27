@@ -1,0 +1,143 @@
+.footer {
+  background: $primary-color-black;
+  padding: 50px 0 20px 0;
+  &__top {
+    @include flex(space-between, $align-items: unset);
+    margin-bottom: 30px;
+  }
+  &__info {
+    max-width: 300px;
+    width: 100%;
+    .text-small {
+      margin-bottom: 30px;
+    }
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__socials {
+    max-width: 180px;
+    @include flex(space-between);
+  }
+  &__circle {
+    @include flex;
+    width: 40px;
+    height: 40px;
+    background: $contrast-color;
+    border-radius: 30px;
+  }
+  &__menu {
+    max-width: 340px;
+    width: 100%;
+    ul {
+      width: 100%;
+      @include flex(space-between, $flex-wrap: wrap);
+    }
+    li {
+      max-width: 150px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    a {
+      position: relative;
+      font-family: $font-family-mont-semiBold;
+      font-size: 15px;
+      color: $footer-light;
+      @include transition(0.4s);
+      img {
+        position: absolute;
+        left: 0;
+        padding-top: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        @include transition(0.4s);
+      }
+      &:hover {
+        padding-left: 25px;
+        color: $contrast-color;
+        img {
+          margin-right: 10px;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  &__contact {
+    @include flex(space-between, $flex-wrap: wrap);
+    max-width: 550px;
+    h3 {
+      flex-basis: 100%;
+    }
+  }
+  &__block {
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 25px;
+    .text-small {
+      margin-bottom: 5px;
+    }
+  }
+  .reverse {
+    .text-small {
+      margin-bottom: 0;
+    }
+    .text-standart {
+      margin-bottom: 5px;
+    }
+  }
+  .line {
+    margin-top: 0;
+    margin-bottom: 30px;
+    background: $primary-color-light-black;
+  }
+  &__bottom {
+    @include flex(space-between);
+    .footer__block {
+      max-width: 310px;
+      margin-bottom: 0;
+    }
+    .text-standart {
+      font-family: $font-family-mont-semiBold;
+      margin-bottom: 10px;
+    }
+    .text-small {
+      margin-bottom: 0;
+    }
+  }
+  &__links {
+    max-width: 900px;
+    width: 100%;
+    @include flex(space-between);
+    a {
+      font-family: $font-family-mont-heavy;
+      font-size: $small-fz;
+      color: $contrast-color;
+      position: relative;
+      &::after {
+        content: "";
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        top: -1px;
+        right: -20px;
+        transform: rotate(15deg);
+        background: $search-color;
+      }
+      &:last-child{
+          &::after{
+              content: unset;
+          }
+      }
+    }
+  }
+  h3 {
+    color: $contrast-color;
+    margin-bottom: 30px;
+  }
+  .text-small {
+    color: $footer-light;
+  }
+  .text-standart {
+    color: $contrast-color;
+  }
+}

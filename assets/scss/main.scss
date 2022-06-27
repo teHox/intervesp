@@ -1,0 +1,93 @@
+@import "./nullstyle";
+@import "./mixins";
+@import "./variables";
+@import "./fonts";
+
+@import "./imports/header.scss";
+@import "./imports/footer.scss";
+@import "./imports/main-screen.scss";
+@import "./imports/woodworking.scss";
+@import "./imports/main-services.scss";
+@import "./imports/map.scss";
+@import "./imports/our-patners.scss";
+@import "./imports/main-news.scss";
+@import "./imports/bread-crumb.scss";
+@import "./imports/about-us.scss";
+@import "./imports/statistic.scss";
+@import "./imports/main-activities.scss";
+@import "./imports/popup-consultation.scss";
+@import "./imports/solutions.scss";
+@import "./imports/us-references.scss";
+@import "./imports/references.scss";
+@import "./imports/popup-references.scss";
+@import "./imports/designing.scss";
+@import "./imports/services.scss";
+@import "./imports/knowledge.scss";
+@import "./imports/knowledge-content.scss";
+@import "./imports/serv.scss";
+@import "./imports/leasing.scss";
+@import "./imports/news.scss";
+@import "./imports/contact.scss";
+
+.container {
+  max-width: 1380px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  line-height: 120%;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.text-small {
+  font-family: $font-family-mont-semiBold;
+  font-size: $small-fz;
+}
+
+.text-standart {
+  font-family: $font-family-mont-heavy;
+  font-size: $standart-fz;
+}
+
+.text-big{
+  font-family: $font-family-mont-heavy;
+  font-size: $button-fz;
+}
+
+h3{
+  font-family: $font-family-matahari-heavy;
+  font-size: $sub-title-fz;
+}
+
+.title{
+  font-family: $font-family-matahari-heavy;
+  font-size: $title-fz;
+}
+
+.button{
+  text-align: center;
+  padding: 20px 15px;
+  background: url(/assets/img/main_bg.png) no-repeat center center;
+  background-size: cover;
+  font-family: $font-family-mont-heavy;
+  font-size: $button-fz;
+  color: $contrast-color;
+  @include transition(0.4s);
+  &:hover{
+    box-shadow: 0px 1px 10px rgba(4, 136, 96, 0.3);
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: $primary-color-light;
+  margin: 50px 0;
+}

@@ -1,0 +1,32 @@
+.main-services{
+    @include flex(space-between, $flex-wrap: wrap);
+    .title{
+        flex-basis: 80%;
+        color: $primary-color-black;
+        margin-bottom: 30px;
+    }
+    .text-standart{
+        flex-basis: 20%;
+        font-family: $font-family-mont-semiBold;
+        text-align: right;
+        color: $primary-color;
+        margin-bottom: 30px;
+        img{
+            margin-left: 16px;
+            padding-top: 3px;
+        }
+    }
+    &__block{
+        max-width: 420px;
+        width: 100%;
+        @include flex(space-between);
+        background: $primary-color-light;
+        padding: 30px 10px 30px 20px;
+    }
+    &__group{
+        max-width: 230px;
+    }
+    h3{
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,157 @@
+.designing {
+  margin-bottom: 50px;
+  &__top {
+    @include flex(space-between);
+    margin-bottom: 50px;
+    .title {
+      color: $contrast-color;
+      margin-bottom: 30px;
+    }
+  }
+  &__left,
+  &__right {
+    height: 370px;
+    padding: 40px;
+    flex-basis: 50%;
+  }
+  &__left {
+    background: url(/assets/img/buttonTarget.png) center center no-repeat;
+    background-size: cover;
+    .text-standart {
+      font-family: $font-family-mont-regular;
+      color: $contrast-color;
+    }
+  }
+  &__right {
+    background: url(/assets/img/main_bg.png) center center no-repeat;
+    background-size: cover;
+    li {
+      position: relative;
+      font-family: $font-family-mont-semiBold;
+      font-size: 17px;
+      color: $contrast-color;
+      margin-bottom: 20px;
+      padding-left: 45px;
+      &::before {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        content: "";
+        background: url(/assets/img/footer_arrow.png) center center no-repeat;
+        width: 14px;
+        height: 9px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__middle {
+    background: url(/assets/img/main_bg.png) center center no-repeat;
+    background-size: cover;
+    padding: 40px;
+    .title {
+      color: $contrast-color;
+      margin-bottom: 30px;
+    }
+  }
+  &-slider {
+    h3 {
+      max-width: 500px;
+      color: $contrast-color;
+    }
+    &__line {
+      height: 1px;
+      background: $primary-color-very-light;
+      opacity: 0.2;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .text-standart {
+      font-family: $font-family-mont-regular;
+      color: $contrast-color;
+    }
+    &__prev,
+    &__next {
+      position: absolute;
+      z-index: 5;
+      top: 3px;
+      cursor: pointer;
+      @include transition(0.4s);
+    }
+    &__prev {
+      right: 70px;
+    }
+    &__next {
+      right: 0;
+    }
+    .swiper-button-disabled {
+      opacity: 0.4;
+    }
+  }
+  &__bottom {
+    .title {
+      color: $primary-color-black;
+      margin-bottom: 30px;
+    }
+  }
+  &__content {
+    width: 100%;
+    height: 720px;
+    position: relative;
+  }
+  &__rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__map {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
+  form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 480px;
+    background: url(/assets/img/main_bg.png) center center no-repeat;
+    background-size: cover;
+    padding: 40px;
+    z-index: 3;
+    .title {
+      color: $contrast-color;
+    }
+    .text-small {
+      color: $contrast-color;
+      margin-bottom: 20px;
+    }
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 20px;
+    input {
+      background: none;
+      width: 100%;
+      color: $contrast-color;
+      font-size: 22px;
+      font-family: $font-family-matahari-semiBold;
+      padding-bottom: 13px;
+      border-bottom: 2px solid $primary-color-very-light-opacity;
+      margin-bottom: 13px;
+    }
+    label {
+      font-family: $font-family-mont-semiBold;
+      font-size: 13px;
+      color: $primary-color-very-light;
+    }
+  }
+  .button {
+    width: 100%;
+    padding: 15px;
+    background: $contrast-color;
+    color: $primary-color;
+  }
+}

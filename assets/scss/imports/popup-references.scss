@@ -1,0 +1,76 @@
+.popup-references {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -300%;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  @include transition(1s);
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 920px;
+    width: 100%;
+  }
+  &__wrapper {
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    background: $contrast-color;
+    border-radius: 5px;
+  }
+  &__top {
+    @include flex(space-between);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .title {
+    color: $primary-color-black;
+    max-width: 740px;
+  }
+  &__close {
+    cursor: pointer;
+  }
+  &__sliders {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+.popup-slider {
+  width: 100%;
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 110px;
+    z-index: 5;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  &__prev {
+    left: 20px;
+  }
+  &__next {
+    right: 20px;
+  }
+}
+.popup-thumbs {
+  height: 90px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  width: 100%;
+  .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+    max-width: 90px;
+  }
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

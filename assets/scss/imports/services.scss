@@ -1,0 +1,94 @@
+.services {
+  .title {
+    color: $primary-color-black;
+    margin-bottom: 50px;
+  }
+  &__content {
+    @include flex(space-between, $flex-wrap: wrap, $align-items: baseline);
+  }
+  &__item {
+    max-width: 650px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: $primary-color-light;
+    max-height: 210px;
+    @include transition(0.4s);
+    &_active {
+      max-height: 1000px;
+      background: $primary-color-very-light;
+    }
+  }
+  &__description {
+    max-width: 440px;
+    width: 100%;
+    padding: 30px;
+    h3 {
+      color: $primary-color-black;
+      margin-bottom: 20px;
+    }
+    .text-small {
+      max-height: 45px;
+      overflow: hidden;
+      color: $search-color;
+      margin-bottom: 20px;
+      @include transition(0.4s);
+    }
+  }
+  &__button {
+    position: relative;
+    font-family: $font-family-mont-semiBold;
+    font-size: $standart-fz;
+    color: $primary-color;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -25px;
+      top: 5px;
+      width: 7px;
+      height: 5px;
+      background: url(/assets/img/services__arrow.png) center center no-repeat;
+    }
+  }
+  &__product {
+    position: relative;
+    max-width: 210px;
+    width: 100%;
+    height: 210px;
+    z-index: 1;
+  }
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 50px;
+  }
+  .services__text_active {
+    max-height: 1000px;
+  }
+  &__logo {
+    position: absolute;
+    left: 0;
+    bottom: -68px;
+    transform: scaleY(0);
+    transform-origin: top;
+    @include transition(0.4s);
+    &_active {
+      transform: scaleY(1);
+    }
+  }
+  @media screen and (max-width: 1340px) {
+    &__content {
+      justify-content: space-around;
+    }
+  }
+}

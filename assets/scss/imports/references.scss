@@ -1,0 +1,81 @@
+.references {
+  &__top {
+    @include flex(space-between);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .title {
+    color: $primary-color-black;
+  }
+  &__link {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 15px;
+    font-family: $font-family-mont-heavy;
+    font-size: $button-fz;
+    background: $contrast-color;
+    color: $primary-color;
+    border: 3px solid $primary-color-light;
+  }
+  &__item {
+    @include flex(space-between, $flex-wrap: wrap);
+  }
+  h3 {
+    flex-basis: 100%;
+    color: $primary-color-black;
+    margin-bottom: 20px;
+  }
+  &__description {
+    max-width: 320px;
+    width: 100%;
+    padding: 20px;
+    background: url(/assets/img/buttonTarget.png) center center no-repeat;
+    background-size: cover;
+    @include transition(0.4s);
+    &-top {
+      @include flex(space-between);
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &:hover {
+      background: url(/assets/img/main_bg.png) center center no-repeat;
+      background-size: cover;
+    }
+  }
+  .text-small {
+    color: $contrast-color;
+    margin-bottom: 15px;
+  }
+  &__block {
+    max-width: 130px;
+    .text-small {
+      color: $contrast-color;
+      margin-bottom: 5px;
+    }
+    .text-standart {
+      font-family: $font-family-mont-semiBold;
+      color: $contrast-color;
+      font-size: 17px;
+    }
+  }
+  &__separator {
+    height: 35px;
+    width: 1px;
+    margin-bottom: 3px;
+    background: $primary-color-light;
+    opacity: 0.2;
+  }
+  &__button {
+    font-family: $font-family-mont-semiBold;
+    font-size: 15px;
+    color: $contrast-color;
+    cursor: pointer;
+    img {
+      margin-left: 15px;
+      padding-top: 3px;
+    }
+  }
+  &__line {
+    margin: 30px 0 !important;
+  }
+}
