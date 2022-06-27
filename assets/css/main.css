@@ -180,7 +180,7 @@ h6 {
   width: 100%;
   height: 40px;
   background-color: #356053;
-  background-image: url(/assets/img/search.png);
+  background-image: url(../img/search.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -579,7 +579,7 @@ h6 {
 }
 
 .main-screen {
-  background: url(/assets/img/main-screen-bg.png) no-repeat right center;
+  background: url(../img/main-screen-bg.png) no-repeat right center;
   background-size: cover;
   padding: 50px 0;
 }
@@ -687,7 +687,7 @@ h6 {
           flex-direction: row;
   position: relative;
   overflow: hidden;
-  background: url(/assets/img/equipment-for-metalworking.png) no-repeat center center;
+  background: url(../img/equipment-for-metalworking.png) no-repeat center center;
   background-size: cover;
   max-width: 270px;
   width: 100%;
@@ -731,7 +731,7 @@ h6 {
   transition: all ease 0.4s;
 }
 .main-screen__equipment:hover {
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
 }
 .main-screen__equipment:hover p::before {
@@ -807,7 +807,7 @@ h6 {
 .woodworking .text-small {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
   padding: 20px;
   color: #ffffff;
@@ -1063,7 +1063,7 @@ h6 {
   position: absolute;
   top: 0;
   right: -30px;
-  background: url(/assets/img/main-news_link.png) center center no-repeat;
+  background: url(../img/main-news_link.png) center center no-repeat;
   width: 15px;
   height: 15px;
 }
@@ -1107,7 +1107,7 @@ h6 {
   bottom: 10px;
   left: 10px;
   padding: 20px;
-  background: url(/assets/img/buttonTarget.png) no-repeat center center;
+  background: url(../img/buttonTarget.png) no-repeat center center;
   background-size: cover;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -1125,7 +1125,7 @@ h6 {
   margin-left: 10px;
 }
 .main-news__block:hover {
-  background: url(/assets/img/main_bg.png) no-repeat center center;
+  background: url(../img/main_bg.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -1561,7 +1561,7 @@ h6 {
   position: absolute;
   width: 13px;
   height: 16px;
-  background: url(/assets/img/us-references_link.png) no-repeat center center;
+  background: url(../img/us-references_link.png) no-repeat center center;
   right: -31px;
   top: 0;
 }
@@ -1607,7 +1607,7 @@ h6 {
   position: absolute;
   width: 14px;
   height: 10px;
-  background: url(/assets/img/green-arrow.png) no-repeat center center;
+  background: url(../img/green-arrow.png) no-repeat center center;
   right: -24px;
   top: 2px;
 }
@@ -1678,7 +1678,7 @@ h6 {
   max-width: 320px;
   width: 100%;
   padding: 20px;
-  background: url(/assets/img/buttonTarget.png) center center no-repeat;
+  background: url(../img/buttonTarget.png) center center no-repeat;
   background-size: cover;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -1703,7 +1703,7 @@ h6 {
   margin-bottom: 20px;
 }
 .references__description:hover {
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
 }
 .references .text-small {
@@ -1873,7 +1873,7 @@ h6 {
       flex-basis: 50%;
 }
 .designing__left {
-  background: url(/assets/img/buttonTarget.png) center center no-repeat;
+  background: url(../img/buttonTarget.png) center center no-repeat;
   background-size: cover;
 }
 .designing__left .text-standart {
@@ -1881,7 +1881,7 @@ h6 {
   color: #ffffff;
 }
 .designing__right {
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
 }
 .designing__right li {
@@ -1897,7 +1897,7 @@ h6 {
   top: 5px;
   left: 10px;
   content: "";
-  background: url(/assets/img/footer_arrow.png) center center no-repeat;
+  background: url(../img/footer_arrow.png) center center no-repeat;
   width: 14px;
   height: 9px;
 }
@@ -1905,7 +1905,7 @@ h6 {
   margin-bottom: 0;
 }
 .designing__middle {
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
   padding: 40px;
 }
@@ -1971,7 +1971,7 @@ h6 {
   bottom: 0;
   right: 0;
   max-width: 480px;
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
   padding: 40px;
   z-index: 3;
@@ -2082,7 +2082,7 @@ h6 {
   top: 5px;
   width: 7px;
   height: 5px;
-  background: url(/assets/img/services__arrow.png) center center no-repeat;
+  background: url(../img/services__arrow.png) center center no-repeat;
 }
 .services__product {
   position: relative;
@@ -2158,7 +2158,7 @@ h6 {
   margin-bottom: 40px;
 }
 .knowledge__item:hover .knowledge__block {
-  background: url(/assets/img/main_bg.png) no-repeat center center;
+  background: url(../img/main_bg.png) no-repeat center center;
   background-size: cover;
 }
 .knowledge__item:hover .knowledge__rectangle::after {
@@ -2171,7 +2171,7 @@ h6 {
   bottom: 10px;
   left: 10px;
   padding: 20px;
-  background: url(/assets/img/buttonTarget.png) no-repeat center center;
+  background: url(../img/buttonTarget.png) no-repeat center center;
   background-size: cover;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -2261,7 +2261,7 @@ h6 {
 .serv__main {
   position: relative;
   width: 100%;
-  background: url(/assets/img/buttonTarget.png) center center no-repeat;
+  background: url(../img/buttonTarget.png) center center no-repeat;
   background-size: cover;
   padding: 40px;
   margin-bottom: 50px;
@@ -2433,7 +2433,7 @@ h6 {
   bottom: 0.5px;
   width: 20px;
   height: 20px;
-  background: url(/assets/img/serv__photo.png) center center no-repeat;
+  background: url(../img/serv__photo.png) center center no-repeat;
 }
 .serv__input, .serv__textarea {
   position: relative;
@@ -2475,7 +2475,7 @@ h6 {
 .leasing__description {
   width: 100%;
   padding: 40px;
-  background: url(/assets/img/buttonTarget.png) center center no-repeat;
+  background: url(../img/buttonTarget.png) center center no-repeat;
   background-size: cover;
 }
 .leasing__top {
@@ -2592,7 +2592,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: url(/assets/img/leasing__bg.png) center center no-repeat;
+  background: url(../img/leasing__bg.png) center center no-repeat;
   background-size: cover;
   margin-bottom: 10px;
 }
@@ -2603,7 +2603,7 @@ h6 {
   top: 0;
   width: 30px;
   height: 60px;
-  background: url(/assets/img/leasing__arrow.png) center center no-repeat;
+  background: url(../img/leasing__arrow.png) center center no-repeat;
 }
 .leasing .last::after {
   content: unset;
@@ -2698,7 +2698,7 @@ h6 {
   bottom: 10px;
   left: 10px;
   padding: 20px;
-  background: url(/assets/img/buttonTarget.png) no-repeat center center;
+  background: url(../img/buttonTarget.png) no-repeat center center;
   background-size: cover;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -2716,7 +2716,7 @@ h6 {
   margin-left: 10px;
 }
 .news__block:hover {
-  background: url(/assets/img/main_bg.png) no-repeat center center;
+  background: url(../img/main_bg.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -2844,7 +2844,7 @@ h6 {
 }
 .contact__top {
   width: 100%;
-  background: url(/assets/img/main_bg.png) center center no-repeat;
+  background: url(../img/main_bg.png) center center no-repeat;
   background-size: cover;
   padding: 50px;
 }
@@ -2932,7 +2932,7 @@ h3 {
 .button {
   text-align: center;
   padding: 20px 15px;
-  background: url(/assets/img/main_bg.png) no-repeat center center;
+  background: url(../img/main_bg.png) no-repeat center center;
   background-size: cover;
   font-family: "Mont Heavy";
   font-size: 17px;
